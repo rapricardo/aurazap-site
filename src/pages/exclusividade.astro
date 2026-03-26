@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarGemini from '../components/NavbarGemini.astro';
+import SecuritySection from '../components/SecuritySection.astro';
+import FooterBase from '../components/FooterBase.astro';
+import { Zap, Lock } from '@lucide/astro';
+---
+
+<BaseLayout
+  title="Target AI — Quem Responde Primeiro Fecha a Venda"
+  description="No WhatsApp, quem responde primeiro fecha a venda. Enquanto seus concorrentes nem leram a mensagem, o Target AI já abordou o cliente. Domine seus grupos com velocidade absoluta."
+>
+  <NavbarGemini />
+
+  <div class="bg-slate-950 text-white min-h-screen pt-20">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="py-24 lg:py-40 px-4 text-center relative">
+      <!-- Gradiente sutil de fundo -->
+      <div class="absolute inset-0 bg-gradient-to-b from-target-green/5 to-transparent"></div>
+
+      <div class="max-w-4xl mx-auto relative z-10">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-400 text-sm font-bold rounded-full px-3 py-1 mb-8">
+          <Lock class="w-4 h-4 text-target-green" />
+          Acesso antecipado para empresas selecionadas
+        </div>
+
+        <h1 class="text-5xl lg:text-7xl font-black leading-tight tracking-tighter mb-6">
+          No WhatsApp, quem responde <span class="text-target-green">primeiro</span> fecha a venda.
+        </h1>
+
+        <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+          Enquanto seus concorrentes nem leram a mensagem, o Target AI já abordou o cliente. Domine seus grupos com velocidade absoluta.
+        </p>
+
+        <a
+          href="https://app.target-ia.com/login"
+          class="cta-link inline-block bg-target-green hover:bg-target-green-hover text-white px-12 py-5 rounded-2xl font-black text-xl hover:shadow-[0_0_50px_rgba(0,166,126,0.4)] transition-all"
+        >
+          GARANTIR MINHA VANTAGEM AGORA
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== TIMING CONCEPT ==================== -->
+    <section id="como-funciona" class="py-24 px-4 bg-slate-900/20">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+        <!-- Lado esquerdo — Timeline visual -->
+        <div class="w-full h-80 bg-slate-950 border border-slate-800 rounded-3xl p-8 flex flex-col justify-center gap-8">
+          <!-- Step 1 -->
+          <div class="flex items-center gap-4 opacity-40">
+            <div class="w-10 h-10 bg-slate-800 rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-sm font-bold text-slate-400">1</span>
+            </div>
+            <span class="text-slate-400">Cliente pede indicação no grupo...</span>
+          </div>
+
+          <!-- Step 2 — Destaque -->
+          <div class="flex items-center gap-4 relative">
+            <div class="absolute -left-2 top-0 bottom-0 w-1 bg-target-green rounded-full blur-sm"></div>
+            <div class="w-10 h-10 bg-target-green rounded-lg flex items-center justify-center shrink-0">
+              <span class="text-sm font-bold text-white">2</span>
+            </div>
+            <span class="text-white font-medium">
+              Target AI aborda em 0.4s
+              <Zap class="w-4 h-4 text-yellow-400 inline" />
+            </span>
+          </div>
+        </div>
+
+        <!-- Lado direito — Texto -->
+        <div class="space-y-6">
+          <h2 class="text-4xl font-bold">
+            A janela de oportunidade de um lead é de apenas 5 minutos.
+          </h2>
+          <p class="text-slate-400 text-lg">
+            Quando alguém pede uma indicação, os primeiros a responderem levam 90% da atenção do cliente. O Target AI reduz seu tempo de resposta de "horas" para "milissegundos".
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SECURITY ==================== -->
+    <SecuritySection />
+
+    <!-- ==================== CTA EXCLUSIVO ==================== -->
+    <section class="py-32 px-4 relative overflow-hidden">
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <h2 class="text-4xl md:text-6xl font-black italic mb-10">
+          Não deixe seu mercado aberto para a concorrência.
+        </h2>
+
+        <a
+          href="https://app.target-ia.com/login"
+          class="cta-link inline-block bg-white text-slate-950 px-10 py-5 rounded-xl font-black text-xl hover:bg-target-green hover:text-white transition-all"
+        >
+          QUERO SER O PRIMEIRO
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <FooterBase />
+</BaseLayout>

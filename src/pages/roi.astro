@@ -1,0 +1,181 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarGemini from '../components/NavbarGemini.astro';
+import SecuritySection from '../components/SecuritySection.astro';
+import FooterBase from '../components/FooterBase.astro';
+import { Zap, TrendingDown, CheckCircle2, BarChart3 } from '@lucide/astro';
+---
+
+<BaseLayout
+  title="Target AI — Reduza seu Custo por Lead em até 90%"
+  description="Pare de queimar orçamento em anúncios com público frio. Capture leads qualificados que estão pedindo sua solução agora em grupos de WhatsApp. Custo zero por lead."
+>
+  <NavbarGemini />
+
+  <div class="bg-slate-950 text-white min-h-screen pt-20">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="py-24 lg:py-32 px-4 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Lado esquerdo -->
+        <div class="space-y-6">
+          <!-- Badge -->
+          <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 rounded-full px-4 py-2 text-sm font-medium">
+            <TrendingDown class="w-4 h-4" />
+            Reduza seu CAC em até 90%
+          </div>
+
+          <h1 class="text-4xl lg:text-6xl font-black leading-tight">
+            O Lead mais qualificado está nos seus grupos. <span class="text-target-green">Chega de pagar caro em anúncios.</span>
+          </h1>
+
+          <p class="text-lg text-slate-400">
+            Pare de queimar orçamento no Facebook Ads com público frio. Capture pessoas que estão pedindo sua solução agora mesmo em grupos de WhatsApp.
+          </p>
+
+          <div>
+            <a
+              href="https://app.target-ia.com/login"
+              class="cta-link inline-block bg-target-green hover:bg-target-green-hover text-white px-10 py-5 rounded-xl font-black text-xl shadow-xl shadow-target-green/30 transition-colors"
+            >
+              REDUZIR MEU CUSTO POR LEAD AGORA
+            </a>
+          </div>
+        </div>
+
+        <!-- Lado direito — Comparison card -->
+        <div class="flex justify-center lg:justify-end">
+          <div class="w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-8 relative overflow-hidden">
+            <!-- Ícone decorativo -->
+            <BarChart3 class="absolute top-0 right-0 p-4 opacity-10 w-[100px] h-[100px]" />
+
+            <h3 class="text-slate-400 text-sm font-bold uppercase tracking-widest mb-8">Comparativo de Mercado</h3>
+
+            <!-- Facebook / Google Ads -->
+            <div class="mb-6">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm text-slate-300">Facebook / Google Ads</span>
+                <span class="text-sm text-red-400">R$ 15,00 / lead</span>
+              </div>
+              <div class="w-full h-3 rounded-full bg-red-500/50"></div>
+            </div>
+
+            <!-- Target AI -->
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-sm text-slate-300">Target AI</span>
+                <span class="text-sm text-target-green font-bold">R$ 0,00 / lead</span>
+              </div>
+              <div class="w-2 h-3 rounded-full bg-target-green"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== COMPARISON TABLE ==================== -->
+    <section class="py-24 bg-slate-900/40 border-y border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 overflow-x-auto">
+        <table class="w-full min-w-[600px]">
+          <thead>
+            <tr>
+              <th class="text-left text-slate-500 uppercase text-xs tracking-widest py-4 px-4">Canal de Vendas</th>
+              <th class="text-left text-slate-500 uppercase text-xs tracking-widest py-4 px-4">Custo por Clique</th>
+              <th class="text-left text-slate-500 uppercase text-xs tracking-widest py-4 px-4">Qualidade do Lead</th>
+              <th class="text-left text-slate-500 uppercase text-xs tracking-widest py-4 px-4">Eficiência</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Plataformas de Anúncios -->
+            <tr class="border-b border-slate-900">
+              <td class="py-4 px-4 text-slate-300">Plataformas de Anúncios</td>
+              <td class="py-4 px-4 text-red-400">R$ 2,00 - R$ 15,00</td>
+              <td class="py-4 px-4 text-slate-300">Passiva (Navegando)</td>
+              <td class="py-4 px-4 text-slate-300">Médio</td>
+            </tr>
+            <!-- Target AI -->
+            <tr class="bg-target-green/5 border-b border-target-green/10">
+              <td class="py-4 px-4 font-black text-white">
+                <span class="inline-flex items-center gap-2">
+                  <Zap class="w-4 h-4 text-target-green" />
+                  Target AI
+                </span>
+              </td>
+              <td class="py-4 px-4 text-target-green font-bold">R$ 0,00</td>
+              <td class="py-4 px-4 text-white font-bold italic">Ativa (Pedindo ajuda)</td>
+              <td class="py-4 px-4 text-target-green font-black">MÁXIMA</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================== BENEFITS ==================== -->
+    <section id="como-funciona" class="py-24 px-4 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+        <!-- Lado esquerdo -->
+        <div class="space-y-8">
+          <h2 class="text-4xl font-bold leading-tight">
+            Transforme "ruído" em faturamento recorrente.
+          </h2>
+
+          <!-- Benefício 1 -->
+          <div class="flex gap-4">
+            <CheckCircle2 class="w-6 h-6 text-target-green shrink-0 mt-1" />
+            <div>
+              <h3 class="text-lg font-bold mb-1">Escalabilidade Sem Anúncios</h3>
+              <p class="text-slate-400">Adicione mais grupos e aumente seu alcance sem precisar investir mais um centavo em Ads.</p>
+            </div>
+          </div>
+
+          <!-- Benefício 2 -->
+          <div class="flex gap-4">
+            <CheckCircle2 class="w-6 h-6 text-target-green shrink-0 mt-1" />
+            <div>
+              <h3 class="text-lg font-bold mb-1">ROI Positivo no Primeiro Lead</h3>
+              <p class="text-slate-400">Uma única venda fechada nos 7 dias de teste já paga a ferramenta por meses.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lado direito — Stats grid 2x2 -->
+        <div class="grid grid-cols-2 gap-6">
+          <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+            <span class="text-3xl font-black text-target-green block">90%</span>
+            <span class="text-xs text-slate-500 uppercase font-bold">Menos CAC</span>
+          </div>
+          <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 mt-8">
+            <span class="text-3xl font-black text-target-green block">24h</span>
+            <span class="text-xs text-slate-500 uppercase font-bold">Monitoramento</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SECURITY ==================== -->
+    <SecuritySection />
+
+    <!-- ==================== CTA FINAL ==================== -->
+    <section class="py-24 px-4 text-center">
+      <h2 class="text-4xl md:text-5xl font-black mb-6">
+        Pare de deixar dinheiro na mesa.
+      </h2>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+        Comece hoje mesmo a transformar seus grupos de networking em máquinas de venda automáticas.
+      </p>
+      <a
+        href="https://app.target-ia.com/login"
+        class="cta-link inline-block bg-target-green hover:bg-target-green-hover text-white px-12 py-6 rounded-2xl font-black text-2xl hover:scale-105 transition-transform"
+      >
+        ATIVAR MINHA IA DE VENDAS AGORA
+      </a>
+    </section>
+
+  </div>
+
+  <FooterBase />
+</BaseLayout>

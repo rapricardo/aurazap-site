@@ -1,0 +1,89 @@
+---
+import { Menu, X } from '@lucide/astro';
+---
+
+<nav class="fixed top-0 left-0 right-0 z-50 h-20 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-3 no-underline">
+      <img src="/target-logo.png" alt="Target AI" class="h-8 w-auto" />
+    </a>
+
+    <!-- Desktop -->
+    <div class="hidden md:flex items-center gap-8">
+      <a href="#como-funciona" class="text-slate-300 hover:text-white transition-colors no-underline text-sm font-medium">
+        Como Funciona
+      </a>
+      <a href="#seguranca" class="text-slate-300 hover:text-white transition-colors no-underline text-sm font-medium">
+        Segurança
+      </a>
+      <a
+        href="https://app.target-ia.com/login"
+        class="text-slate-300 hover:text-white transition-colors no-underline text-sm font-medium cta-link"
+      >
+        Entrar
+      </a>
+      <a
+        href="https://app.target-ia.com/login"
+        class="bg-target-green hover:bg-target-green-hover text-white font-bold py-2.5 px-6 rounded-xl transition-all duration-300 no-underline text-sm cta-link"
+      >
+        Teste Grátis 7 Dias
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="gemini-menu-toggle"
+      class="md:hidden text-white p-2"
+      aria-label="Abrir menu"
+    >
+      <Menu id="gemini-icon-open" class="w-6 h-6" />
+      <X id="gemini-icon-close" class="w-6 h-6 hidden" />
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="gemini-mobile-menu"
+    class="hidden md:hidden bg-slate-950/95 backdrop-blur-md border-b border-slate-800 px-6 py-6 flex flex-col gap-4"
+  >
+    <a href="#como-funciona" class="text-slate-300 hover:text-white transition-colors no-underline text-sm font-medium">
+      Como Funciona
+    </a>
+    <a href="#seguranca" class="text-slate-300 hover:text-white transition-colors no-underline text-sm font-medium">
+      Segurança
+    </a>
+    <a
+      href="https://app.target-ia.com/login"
+      class="text-slate-300 hover:text-white transition-colors no-underline text-sm font-medium cta-link"
+    >
+      Entrar
+    </a>
+    <a
+      href="https://app.target-ia.com/login"
+      class="bg-target-green hover:bg-target-green-hover text-white font-bold py-2.5 px-6 rounded-xl transition-all duration-300 no-underline text-sm text-center cta-link"
+    >
+      Teste Grátis 7 Dias
+    </a>
+  </div>
+</nav>
+
+<script>
+  const toggle = document.getElementById('gemini-menu-toggle');
+  const menu = document.getElementById('gemini-mobile-menu');
+  const iconOpen = document.getElementById('gemini-icon-open');
+  const iconClose = document.getElementById('gemini-icon-close');
+
+  toggle?.addEventListener('click', () => {
+    const isOpen = !menu?.classList.contains('hidden');
+    if (isOpen) {
+      menu?.classList.add('hidden');
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+    } else {
+      menu?.classList.remove('hidden');
+      iconOpen?.classList.add('hidden');
+      iconClose?.classList.remove('hidden');
+    }
+  });
+</script>

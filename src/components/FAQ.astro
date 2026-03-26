@@ -1,0 +1,86 @@
+---
+import { ChevronDown } from '@lucide/astro';
+
+const faqs = [
+  {
+    question: 'Preciso pagar para testar?',
+    answer: 'Não. Você tem acesso total por 7 dias para validar a ferramenta e ver os primeiros leads chegando sem compromisso.',
+  },
+  {
+    question: 'Funciona com WhatsApp Business?',
+    answer: 'Sim, perfeitamente compatível com contas pessoais e Business. A integração é via QR Code padrão.',
+  },
+  {
+    question: 'Quantas palavras-chave posso cadastrar?',
+    answer: 'Quantas forem necessárias para o seu negócio. Você pode monitorar desde termos genéricos até nichos específicos.',
+  },
+];
+---
+
+<section class="py-24 px-6">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl md:text-4xl text-center mb-12">
+      7 dias para você sentir o poder da automação.
+    </h2>
+
+    <div class="space-y-4" id="faq-list">
+      {faqs.map((faq, i) => (
+        <div class="glass rounded-2xl overflow-hidden" data-faq-item>
+          <button
+            class="w-full flex items-center justify-between gap-4 p-6 text-left cursor-pointer"
+            data-faq-toggle
+            aria-expanded={i === 0 ? 'true' : 'false'}
+          >
+            <span class="text-white font-semibold text-lg">{faq.question}</span>
+            <span class:list={['shrink-0 text-slate-400 transition-transform duration-300', { 'rotate-180': i === 0 }]} data-faq-icon>
+              <ChevronDown class="w-5 h-5" />
+            </span>
+          </button>
+          <div
+            class:list={['px-6 overflow-hidden transition-all duration-300', i === 0 ? 'max-h-40 pb-6' : 'max-h-0']}
+            data-faq-content
+          >
+            <p class="text-slate-400 leading-relaxed">{faq.answer}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  const items = document.querySelectorAll('[data-faq-item]');
+
+  items.forEach((item) => {
+    const toggle = item.querySelector('[data-faq-toggle]');
+    const content = item.querySelector<HTMLElement>('[data-faq-content]');
+    const icon = item.querySelector('[data-faq-icon]');
+
+    toggle?.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+
+      // Fecha todos
+      items.forEach((otherItem) => {
+        const otherToggle = otherItem.querySelector('[data-faq-toggle]');
+        const otherContent = otherItem.querySelector<HTMLElement>('[data-faq-content]');
+        const otherIcon = otherItem.querySelector('[data-faq-icon]');
+        otherToggle?.setAttribute('aria-expanded', 'false');
+        if (otherContent) {
+          otherContent.classList.remove('max-h-40', 'pb-6');
+          otherContent.classList.add('max-h-0');
+        }
+        otherIcon?.classList.remove('rotate-180');
+      });
+
+      // Abre o clicado (se estava fechado)
+      if (!isOpen) {
+        toggle.setAttribute('aria-expanded', 'true');
+        if (content) {
+          content.classList.remove('max-h-0');
+          content.classList.add('max-h-40', 'pb-6');
+        }
+        icon?.classList.add('rotate-180');
+      }
+    });
+  });
+</script>

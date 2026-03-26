@@ -1,0 +1,91 @@
+---
+import { Menu, X } from '@lucide/astro';
+---
+
+<nav
+  id="navbar"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-3 no-underline">
+      <img src="/target-logo.png" alt="Target AI" class="h-8 w-auto" />
+    </a>
+
+    <!-- Desktop -->
+    <div class="hidden md:flex items-center gap-4">
+      <a
+        href="https://app.target-ia.com/login"
+        class="btn-ghost cta-link"
+      >
+        Login
+      </a>
+      <a
+        href="https://app.target-ia.com/login"
+        class="btn-primary cta-link"
+      >
+        Começar Teste Grátis
+      </a>
+    </div>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="menu-toggle"
+      class="md:hidden text-white p-2"
+      aria-label="Abrir menu"
+    >
+      <Menu id="icon-open" class="w-6 h-6" />
+      <X id="icon-close" class="w-6 h-6 hidden" />
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden glass border-t border-white/10 px-6 py-6 flex flex-col gap-4"
+  >
+    <a
+      href="https://app.target-ia.com/login"
+      class="btn-ghost cta-link w-full text-center"
+    >
+      Login
+    </a>
+    <a
+      href="https://app.target-ia.com/login"
+      class="btn-primary cta-link w-full text-center"
+    >
+      Começar Teste Grátis
+    </a>
+  </div>
+</nav>
+
+<script>
+  const navbar = document.getElementById('navbar');
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
+
+  // Scroll detection
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      navbar?.classList.add('backdrop-blur-lg', 'border-b', 'border-white/10', 'bg-slate-950/60');
+    } else {
+      navbar?.classList.remove('backdrop-blur-lg', 'border-b', 'border-white/10', 'bg-slate-950/60');
+    }
+  });
+
+  // Mobile menu toggle
+  menuToggle?.addEventListener('click', () => {
+    const isOpen = !mobileMenu?.classList.contains('hidden');
+    if (isOpen) {
+      mobileMenu?.classList.add('hidden');
+      iconOpen?.classList.remove('hidden');
+      iconClose?.classList.add('hidden');
+    } else {
+      mobileMenu?.classList.remove('hidden');
+      iconOpen?.classList.add('hidden');
+      iconClose?.classList.remove('hidden');
+    }
+  });
+</script>

@@ -1,0 +1,94 @@
+---
+import { Smartphone, MessageSquare } from '@lucide/astro';
+---
+
+<footer class="bg-slate-950 border-t border-slate-900 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+      <!-- Brand (2 cols) -->
+      <div class="md:col-span-2 space-y-6">
+        <a href="/" class="flex items-center gap-3 no-underline">
+          <img src="/target-logo.png" alt="Target AI" class="h-8 w-auto" />
+        </a>
+        <p class="text-slate-400 text-sm leading-relaxed max-w-md">
+          Transformando grupos de WhatsApp em máquinas de vendas automatizadas com inteligência artificial de ponta.
+        </p>
+        <div class="flex items-center gap-4">
+          <span class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400">
+            <Smartphone class="w-5 h-5" />
+          </span>
+          <span class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-slate-400">
+            <MessageSquare class="w-5 h-5" />
+          </span>
+        </div>
+      </div>
+
+      <!-- Produto -->
+      <div>
+        <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Produto</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="#" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Recursos
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Preços
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Integrações
+            </a>
+          </li>
+          <li>
+            <a href="#seguranca" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Segurança
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Suporte -->
+      <div>
+        <h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Suporte</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="#" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Central de Ajuda
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Documentação API
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Contato
+            </a>
+          </li>
+          <li>
+            <a href="/privacidade" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Privacidade
+            </a>
+          </li>
+          <li>
+            <a href="/termos" class="text-slate-400 hover:text-target-green transition-colors text-sm no-underline">
+              Termos de Uso
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright bar -->
+    <div class="border-t border-slate-900 mt-12 pt-8 text-center">
+      <span class="text-slate-500 text-sm">
+        &copy; 2026 Target AI. Todos os direitos reservados.
+      </span>
+    </div>
+  </div>
+</footer>

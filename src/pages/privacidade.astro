@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarBase from '../components/NavbarBase.astro';
+import FooterBase from '../components/FooterBase.astro';
+---
+
+<BaseLayout
+  title="Política de Privacidade — Target AI"
+  description="Política de Privacidade da Target AI. Saiba como coletamos, usamos e protegemos seus dados pessoais."
+>
+  <NavbarBase />
+
+  <main class="pt-32 pb-24 px-6">
+    <article class="max-w-3xl mx-auto prose prose-invert prose-slate">
+      <h1 class="text-4xl md:text-5xl mb-4">Política de Privacidade</h1>
+      <p class="text-slate-400 text-sm mb-12">Última atualização: 26 de março de 2026</p>
+
+      <p>
+        A Target AI, operada pela Heat Multimidia EIRELI, inscrita sob o CNPJ 11.543.248/0001-15, com sede em São Paulo, SP, é a responsável pelo tratamento dos dados pessoais descritos nesta Política de Privacidade. Ao utilizar nossos serviços, você concorda com as práticas aqui descritas.
+      </p>
+
+      <h2>1. Dados que Coletamos</h2>
+      <p>Podemos coletar as seguintes categorias de dados pessoais:</p>
+      <ul>
+        <li><strong>Dados de identificação:</strong> nome completo, endereço de e-mail e número de WhatsApp, fornecidos voluntariamente por você ao criar uma conta ou entrar em contato conosco.</li>
+        <li><strong>Dados de navegação:</strong> endereço IP, tipo de navegador, sistema operacional, páginas acessadas, tempo de permanência e origem do acesso (incluindo parâmetros UTM e identificadores de campanhas publicitárias).</li>
+        <li><strong>Dados de uso do serviço:</strong> configurações de monitoramento, palavras-chave cadastradas e estatísticas de desempenho da ferramenta.</li>
+        <li><strong>Cookies e tecnologias similares:</strong> utilizamos cookies de sessão, cookies de análise (Google Analytics) e cookies de publicidade (Meta Pixel, Google Ads) para melhorar sua experiência e medir a eficácia de nossas campanhas.</li>
+      </ul>
+
+      <h2>2. Como Usamos seus Dados</h2>
+      <p>Utilizamos seus dados pessoais para as seguintes finalidades:</p>
+      <ul>
+        <li>Prestar e manter os serviços contratados;</li>
+        <li>Criar e gerenciar sua conta na plataforma;</li>
+        <li>Enviar comunicações relacionadas ao serviço, como atualizações, alertas e suporte;</li>
+        <li>Analisar o desempenho do site e melhorar a experiência do usuário;</li>
+        <li>Medir a eficácia de campanhas publicitárias e atribuir conversões;</li>
+        <li>Cumprir obrigações legais e regulatórias.</li>
+      </ul>
+
+      <h2>3. Compartilhamento de Dados</h2>
+      <p>Não vendemos seus dados pessoais. Podemos compartilhá-los nas seguintes situações:</p>
+      <ul>
+        <li><strong>Prestadores de serviço:</strong> empresas que nos auxiliam na operação da plataforma, como provedores de hospedagem, análise de dados e processamento de pagamentos, sempre sob obrigações de confidencialidade.</li>
+        <li><strong>Plataformas de publicidade:</strong> dados de navegação anonimizados podem ser compartilhados com Google Ads, Meta e outras plataformas para fins de remarketing e otimização de campanhas.</li>
+        <li><strong>Obrigação legal:</strong> quando exigido por lei, ordem judicial ou autoridade competente.</li>
+      </ul>
+
+      <h2>4. Armazenamento e Segurança</h2>
+      <p>
+        Seus dados são armazenados em servidores seguros com criptografia em trânsito (TLS/SSL) e em repouso. Adotamos medidas técnicas e organizacionais para proteger seus dados contra acesso não autorizado, perda ou alteração. O período de retenção dos dados varia conforme a finalidade do tratamento e as exigências legais aplicáveis.
+      </p>
+
+      <h2>5. Seus Direitos</h2>
+      <p>De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem direito a:</p>
+      <ul>
+        <li>Confirmar a existência de tratamento de seus dados;</li>
+        <li>Acessar seus dados pessoais;</li>
+        <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
+        <li>Solicitar a anonimização, bloqueio ou eliminação de dados desnecessários;</li>
+        <li>Solicitar a portabilidade dos dados;</li>
+        <li>Revogar seu consentimento a qualquer momento.</li>
+      </ul>
+      <p>
+        Para exercer seus direitos, entre em contato pelo e-mail <strong>privacidade@target-ia.com</strong>.
+      </p>
+
+      <h2>6. Cookies</h2>
+      <p>
+        Utilizamos cookies essenciais para o funcionamento do site e cookies de terceiros para fins analíticos e publicitários. Você pode gerenciar suas preferências de cookies através das configurações do seu navegador. A desativação de determinados cookies pode impactar a funcionalidade do site.
+      </p>
+
+      <h2>7. Alterações nesta Política</h2>
+      <p>
+        Podemos atualizar esta Política de Privacidade periodicamente. Quaisquer alterações serão publicadas nesta página com a data de atualização revisada. Recomendamos que você revise esta página regularmente.
+      </p>
+
+      <h2>8. Contato</h2>
+      <p>
+        Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento de seus dados, entre em contato conosco:
+      </p>
+      <ul>
+        <li><strong>E-mail:</strong> privacidade@target-ia.com</li>
+        <li><strong>Endereço:</strong> São Paulo, SP — Brasil</li>
+      </ul>
+    </article>
+  </main>
+
+  <FooterBase />
+</BaseLayout>
+
+<style>
+  @reference "../styles/global.css";
+
+  .prose h2 {
+    @apply text-2xl font-display font-bold text-white mt-10 mb-4;
+  }
+  .prose p {
+    @apply text-slate-300 leading-relaxed mb-4;
+  }
+  .prose ul {
+    @apply text-slate-300 space-y-2 mb-6 list-disc pl-6;
+  }
+  .prose li {
+    @apply leading-relaxed;
+  }
+  .prose strong {
+    @apply text-white;
+  }
+</style>

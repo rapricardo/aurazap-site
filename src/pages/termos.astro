@@ -1,0 +1,117 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NavbarBase from '../components/NavbarBase.astro';
+import FooterBase from '../components/FooterBase.astro';
+---
+
+<BaseLayout
+  title="Termos de Uso — Target AI"
+  description="Termos de Uso da plataforma Target AI. Leia as condições para utilização dos nossos serviços de captura inteligente de leads."
+>
+  <NavbarBase />
+
+  <main class="pt-32 pb-24 px-6">
+    <article class="max-w-3xl mx-auto prose prose-invert prose-slate">
+      <h1 class="text-4xl md:text-5xl mb-4">Termos de Uso</h1>
+      <p class="text-slate-400 text-sm mb-12">Última atualização: 26 de março de 2026</p>
+
+      <p>
+        Estes Termos de Uso regulam a utilização da plataforma Target AI, operada pela Heat Multimidia EIRELI, inscrita sob o CNPJ 11.543.248/0001-15. Ao acessar ou utilizar nossos serviços, você declara ter lido, compreendido e concordado com estes termos na íntegra.
+      </p>
+
+      <h2>1. Descrição do Serviço</h2>
+      <p>
+        A Target AI é uma plataforma de automação que utiliza inteligência artificial para monitorar conversas em grupos de WhatsApp, identificar intenções de compra com base em palavras-chave configuradas pelo usuário e iniciar abordagens automatizadas via mensagem direta. O serviço é oferecido na modalidade SaaS (Software as a Service).
+      </p>
+
+      <h2>2. Cadastro e Conta</h2>
+      <ul>
+        <li>Para utilizar a plataforma, é necessário criar uma conta fornecendo informações verdadeiras, completas e atualizadas.</li>
+        <li>Você é responsável por manter a confidencialidade de suas credenciais de acesso.</li>
+        <li>Qualquer atividade realizada com suas credenciais é de sua responsabilidade.</li>
+        <li>Reservamo-nos o direito de suspender ou encerrar contas que violem estes termos.</li>
+      </ul>
+
+      <h2>3. Período de Teste</h2>
+      <p>
+        Oferecemos um período de teste gratuito de 7 (sete) dias corridos a partir da ativação da conta. Durante este período, o usuário terá acesso completo às funcionalidades da plataforma. Ao término do período de teste, o acesso será suspenso até a contratação de um plano pago, salvo disposição em contrário.
+      </p>
+
+      <h2>4. Uso Aceitável</h2>
+      <p>Ao utilizar a Target AI, você se compromete a:</p>
+      <ul>
+        <li>Utilizar o serviço em conformidade com a legislação brasileira vigente, incluindo o Marco Civil da Internet, a LGPD e o Código de Defesa do Consumidor;</li>
+        <li>Não utilizar a plataforma para envio de spam, mensagens não solicitadas em massa ou conteúdo ilícito;</li>
+        <li>Não utilizar o serviço para assediar, ameaçar ou prejudicar terceiros;</li>
+        <li>Respeitar os termos de uso do WhatsApp e de quaisquer plataformas de terceiros integradas ao serviço;</li>
+        <li>Não tentar acessar, modificar ou interferir nos sistemas, servidores ou redes da Target AI de forma não autorizada.</li>
+      </ul>
+
+      <h2>5. Responsabilidades do Usuário</h2>
+      <p>
+        O usuário é integralmente responsável pelo conteúdo das mensagens configuradas para envio automático, pelas palavras-chave definidas e pelos grupos monitorados. A Target AI atua exclusivamente como ferramenta tecnológica e não se responsabiliza pelo conteúdo gerado ou enviado pelo usuário.
+      </p>
+
+      <h2>6. Limitação de Responsabilidade</h2>
+      <ul>
+        <li>A Target AI não garante resultados específicos de vendas, conversões ou geração de leads.</li>
+        <li>Não nos responsabilizamos por eventuais restrições, bloqueios ou penalidades aplicadas pelo WhatsApp ou outras plataformas de terceiros à conta do usuário.</li>
+        <li>O serviço é fornecido "como está", sem garantias de disponibilidade ininterrupta ou ausência de erros.</li>
+        <li>Nossa responsabilidade total perante o usuário está limitada ao valor pago pelo serviço nos 12 meses anteriores ao evento que deu origem à reclamação.</li>
+      </ul>
+
+      <h2>7. Propriedade Intelectual</h2>
+      <p>
+        Todo o conteúdo da plataforma, incluindo software, design, textos, marcas, logotipos e algoritmos, é de propriedade exclusiva da Target AI ou de seus licenciadores. É vedada a reprodução, distribuição ou uso não autorizado de qualquer elemento da plataforma.
+      </p>
+
+      <h2>8. Pagamento e Cancelamento</h2>
+      <ul>
+        <li>Os planos pagos são cobrados de forma recorrente conforme a periodicidade contratada.</li>
+        <li>O cancelamento pode ser solicitado a qualquer momento e será efetivado ao final do período já pago.</li>
+        <li>Não há reembolso proporcional para cancelamentos realizados durante um período de cobrança vigente.</li>
+      </ul>
+
+      <h2>9. Modificações nos Termos</h2>
+      <p>
+        Reservamo-nos o direito de alterar estes Termos de Uso a qualquer momento. Alterações relevantes serão comunicadas por e-mail ou por aviso na plataforma com antecedência mínima de 15 dias. O uso continuado do serviço após a alteração constitui aceitação dos novos termos.
+      </p>
+
+      <h2>10. Foro e Legislação Aplicável</h2>
+      <p>
+        Estes Termos de Uso são regidos pela legislação da República Federativa do Brasil. Fica eleito o foro da Comarca de São Paulo, SP, para dirimir quaisquer controvérsias decorrentes destes termos, com renúncia a qualquer outro, por mais privilegiado que seja.
+      </p>
+
+      <h2>11. Contato</h2>
+      <p>
+        Em caso de dúvidas sobre estes Termos de Uso, entre em contato conosco:
+      </p>
+      <ul>
+        <li><strong>E-mail:</strong> contato@target-ia.com</li>
+        <li><strong>Endereço:</strong> São Paulo, SP — Brasil</li>
+      </ul>
+    </article>
+  </main>
+
+  <FooterBase />
+</BaseLayout>
+
+<style>
+  @reference "../styles/global.css";
+
+  .prose h2 {
+    @apply text-2xl font-display font-bold text-white mt-10 mb-4;
+  }
+  .prose p {
+    @apply text-slate-300 leading-relaxed mb-4;
+  }
+  .prose ul {
+    @apply text-slate-300 space-y-2 mb-6 list-disc pl-6;
+  }
+  .prose li {
+    @apply leading-relaxed;
+  }
+  .prose strong {
+    @apply text-white;
+  }
+</style>
