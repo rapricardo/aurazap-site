@@ -23,26 +23,31 @@ import { ArrowRight } from '@lucide/astro';
 
   <!-- Bottom bar -->
   <div class="border-t border-white/5 py-8 px-6 relative z-10">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="max-w-7xl mx-auto flex flex-col items-center gap-6">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-3 no-underline">
         <img src="/target-logo.png" alt="Target AI" class="h-7 w-auto" />
       </a>
 
+      <!-- Landing pages -->
+      <nav class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-sm">
+        <a href="/" class="text-slate-400 hover:text-target-green transition-colors no-underline">Home</a>
+        <span class="text-slate-600">|</span>
+        <a href="/eficiencia" class="text-slate-400 hover:text-target-green transition-colors no-underline">Eficiência</a>
+        <span class="text-slate-600">|</span>
+        <a href="/roi" class="text-slate-400 hover:text-target-green transition-colors no-underline">ROI</a>
+        <span class="text-slate-600">|</span>
+        <a href="/exclusividade" class="text-slate-400 hover:text-target-green transition-colors no-underline">Exclusividade</a>
+        <span class="text-slate-600">|</span>
+        <a href="/privacidade" class="text-slate-400 hover:text-target-green transition-colors no-underline">Privacidade</a>
+        <span class="text-slate-600">|</span>
+        <a href="/termos" class="text-slate-400 hover:text-target-green transition-colors no-underline">Termos</a>
+      </nav>
+
       <!-- Copyright -->
-      <span class="text-slate-500 text-sm text-center">
+      <span class="text-slate-500 text-xs text-center">
         &copy; 2026 Target AI - Captura inteligente de leads. Todos os direitos reservados.
       </span>
-
-      <!-- Links -->
-      <div class="flex items-center gap-6 text-sm">
-        <a href="/privacidade" class="text-slate-500 hover:text-slate-300 transition-colors no-underline">
-          Privacidade
-        </a>
-        <a href="/termos" class="text-slate-500 hover:text-slate-300 transition-colors no-underline">
-          Termos
-        </a>
-      </div>
     </div>
   </div>
 </footer>
