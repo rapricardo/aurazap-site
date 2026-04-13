@@ -1,5 +1,5 @@
 /**
- * Target AI — Script de captura e tracking (padrão ApexMkt GTM)
+ * Aurazap — Script de captura e tracking (padrão ApexMkt GTM)
  * Captura UTMs, click IDs, cookies Meta, dados de sessão.
  * Persiste em sessionStorage e expõe via window.__wlTracking.
  * Popula hidden fields (se existirem) e enriquece links CTA com params.

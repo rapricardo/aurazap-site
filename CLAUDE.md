@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Sobre o Projeto
 
-Site estático do **Target AI** — ferramenta de automação para captura de leads em grupos de WhatsApp via IA. 4 landing pages otimizadas para SEO e performance, voltadas a empresários que querem monitorar grupos e abordar leads automaticamente.
+Site estático do **Aurazap** — ferramenta de automação para captura de leads em grupos de WhatsApp via IA. 4 landing pages otimizadas para SEO e performance, voltadas a empresários que querem monitorar grupos e abordar leads automaticamente.
 
-Conteúdo 100% em Português Brasileiro (pt-BR). Domínio: `https://target-ia.com`.
+Conteúdo 100% em Português Brasileiro (pt-BR). Domínio: `https://aurazap.ia.br`.
 
 ## Comandos
 
@@ -54,7 +54,7 @@ src/
 | `/roi` | Custo por lead zero, comparativo com ads |
 | `/exclusividade` | Velocidade de resposta, vantagem competitiva |
 
-Todos os CTAs direcionam para `https://app.target-ia.com/login` com classe `cta-link` (o tracking script anexa UTM params automaticamente).
+Todos os CTAs direcionam para `https://app.aurazap.ia.br/login` com classe `cta-link` (o tracking script anexa UTM params automaticamente).
 
 ## Tracking e GTM
 
@@ -67,10 +67,10 @@ Todos os CTAs direcionam para `https://app.target-ia.com/login` com classe `cta-
 ## Design System
 
 Tokens em `src/styles/global.css` via `@theme`:
-- `target-green` (#00a67e) — cor primária
-- `target-green-hover` (#008f6d) — hover
-- `target-bg` (#0f172a) — fundo escuro
-- `target-card` (#1e293b) — fundo de cards
+- `aurazap-green` (#00a67e) — cor primária
+- `aurazap-green-hover` (#008f6d) — hover
+- `aurazap-bg` (#0f172a) — fundo escuro
+- `aurazap-card` (#1e293b) — fundo de cards
 
 Classes utilitárias: `.glass`, `.btn-primary`, `.btn-ghost`, `.cta-link`
 

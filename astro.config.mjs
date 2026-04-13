@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://target-ia.com',
+  site: 'https://aurazap.ia.br',
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],

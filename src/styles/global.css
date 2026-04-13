@@ -4,15 +4,15 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Space Grotesk", sans-serif;
-  --color-target-green: #00a67e;
-  --color-target-green-hover: #008f6d;
-  --color-target-bg: #0f172a;
-  --color-target-card: #1e293b;
+  --color-aurazap-green: #00a67e;
+  --color-aurazap-green-hover: #008f6d;
+  --color-aurazap-bg: #0f172a;
+  --color-aurazap-card: #1e293b;
 }
 
 @layer base {
   body {
-    @apply bg-target-bg text-slate-200 font-sans antialiased;
+    @apply bg-aurazap-bg text-slate-200 font-sans antialiased;
   }
   h1, h2, h3, h4 {
     @apply font-display font-bold tracking-tight text-white;
@@ -24,11 +24,11 @@
 }
 
 .btn-primary {
-  @apply inline-flex items-center justify-center gap-2 bg-target-green hover:bg-target-green-hover text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(0,166,126,0.3)] hover:scale-105 active:scale-95 no-underline;
+  @apply inline-flex items-center justify-center gap-2 bg-aurazap-green hover:bg-aurazap-green-hover text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(0,166,126,0.3)] hover:scale-105 active:scale-95 no-underline;
 }
 
 .btn-ghost {
-  @apply inline-flex items-center justify-center border-2 border-white/20 hover:border-target-green/50 hover:bg-white/5 text-white font-medium py-2 px-6 rounded-xl transition-all duration-300 no-underline;
+  @apply inline-flex items-center justify-center border-2 border-white/20 hover:border-aurazap-green/50 hover:bg-white/5 text-white font-medium py-2 px-6 rounded-xl transition-all duration-300 no-underline;
 }
 
 .cta-link {

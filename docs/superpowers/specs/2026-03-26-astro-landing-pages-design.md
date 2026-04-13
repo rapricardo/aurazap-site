@@ -1,4 +1,4 @@
-# Design: Site Target AI em Astro
+# Design: Site Aurazap em Astro
 
 ## Contexto
 
@@ -9,10 +9,10 @@ Migração de landing pages React (Vite SPA) para Astro SSG, otimizando para per
 | Decisão | Escolha |
 |---------|---------|
 | Cor primária | `#00a67e` |
-| CTAs | Links diretos para `https://app.target-ia.com/login` |
+| CTAs | Links diretos para `https://app.aurazap.ia.br/login` |
 | Formulários na LP | Nenhum — tracking via GTM |
 | Passagem de tracking | Append UTM params na URL do login |
-| Domínio | `https://target-ia.com` |
+| Domínio | `https://aurazap.ia.br` |
 
 ## Stack
 
@@ -72,16 +72,16 @@ src/
 
 ## Design System
 
-- `--color-target-green: #00a67e`
-- `--color-target-bg: #0f172a`
-- `--color-target-card: #1e293b`
+- `--color-aurazap-green: #00a67e`
+- `--color-aurazap-bg: #0f172a`
+- `--color-aurazap-card: #1e293b`
 - Fontes: Inter (sans), Space Grotesk (display)
 - Classes: `.glass`, `.btn-primary`, `.btn-ghost`
 
 ## SEO
 
 - `<title>` e `<meta description>` únicos por página
-- Canonical URLs (`https://target-ia.com/...`)
+- Canonical URLs (`https://aurazap.ia.br/...`)
 - Open Graph tags
 - `lang="pt-BR"`
 - Sitemap XML automático via `@astrojs/sitemap`
