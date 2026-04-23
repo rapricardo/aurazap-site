@@ -58,7 +58,7 @@ Todos os CTAs direcionam para `https://app.aurazap.ia.br/login` com classe `cta-
 
 ## Tracking e GTM
 
-- **GTM Container:** `GTM-TKXT9V2H` (script + noscript em todas as páginas via BaseLayout)
+- **GTM Container:** `GTM-NR6SSW7L` (script + noscript em todas as páginas via BaseLayout)
 - **Tracking script:** `public/scripts/tracking.js` — captura UTMs, click IDs (Google/Meta/TikTok/etc), cookies Meta, session ID, referrer, user agent
 - Dados persistem em `sessionStorage` (chave `__wl_tracking`) e são expostos via `window.__wlTracking`
 - Links com classe `cta-link` são enriquecidos automaticamente com params de tracking
